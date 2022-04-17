@@ -6,10 +6,10 @@ struct node
 {
     int data;
     struct node *next;
-} A three - member singly linked list can be created as :
+}
 
-    /* Initialize nodes */
-    struct node *head;
+/* Initialize nodes */
+struct node *head;
 struct node *one = NULL;
 struct node *two = NULL;
 struct node *three = NULL;

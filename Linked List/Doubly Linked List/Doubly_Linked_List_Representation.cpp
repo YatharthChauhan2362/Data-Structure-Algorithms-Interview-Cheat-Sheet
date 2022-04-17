@@ -25,8 +25,13 @@ three->data = 3;
 
 /* Connect nodes */
 one->next = two;
+one->prev = NULL;
+
 two->next = three;
-three->next = one;
+two->prev = one;
+
+three->next = NULL;
+three->prev = two;
 
 /* Save address of first node in head */
 head = one;
