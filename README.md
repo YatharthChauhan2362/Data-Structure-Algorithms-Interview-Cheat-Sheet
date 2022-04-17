@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-# Tech Interview Cheat Sheet (Author: Yatharth Chauhan)
-=======
 # Data Structure & Algorithms Cheat Sheet
 
+# (Author: Yatharth Chauhan)
+
 Interview Preparation For Technical Round
->>>>>>> 72e22df6917906a0a5ae2e8dbe5fac279fe83a1f
 
 This list is meant to be both a quick guide and reference for further research into these topics. It's basically a summary of that comp sci course you never took or forgot about, so there's no way it can cover everything in depth.
 
