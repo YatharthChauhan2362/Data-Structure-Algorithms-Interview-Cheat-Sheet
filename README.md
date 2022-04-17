@@ -1,6 +1,6 @@
 # Data Structure & Algorithms Cheat Sheet
 
-# (Author: Yatharth Chauhan)
+# Author: Yatharth Chauhan
 
 Interview Preparation For Technical Round
 
