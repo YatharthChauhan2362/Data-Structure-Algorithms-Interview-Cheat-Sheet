@@ -16,7 +16,9 @@ The last node of the list stored null value as the address.
 
 It is possible for a list to have no nodes at all, such a list is called empty list.
 
+
 Time Complexity
+
 
 Worst case Average Case
 
@@ -28,6 +30,7 @@ Deletion O(1) O(1)
 
 Space Complexity: O(n)
 
+
 # Linked List Applications
 
 Dynamic memory allocation
@@ -35,11 +38,13 @@ Implemented in stack and queue
 In undo functionality of softwares
 Hash tables, Graphs
 
+
 # Doubly Linked List
 
 We add a pointer to the previous node in a doubly-linked list. Thus, we can go in either direction: forward or backward.
 
 Each struct node has a data item, a pointer to the previous struct node, and a pointer to the next struct node.
+
 
 # Insertion on a Doubly Linked List
 
@@ -68,6 +73,7 @@ Each struct node has a data item, a pointer to the previous struct node, and a p
 Insertion in-between nodes
 Insertion at the End
 
+
 # -> Insertion in between two nodes
 
 1. Create a new node
@@ -81,6 +87,7 @@ Insertion at the End
 3. Set the prev pointer of new node and the next node
    assign the value of prev of next node to the prev of newNode
    assign the address of newNode to the prev of next node
+   
 
 # -> Insertion at the End
 
@@ -88,6 +95,7 @@ Insertion at the End
 
 2. Set prev and next pointers of new node and the previous node
    If the linked list is empty, make the newNode as the head node. Otherwise, traverse to the end of the doubly linked list and
+
 
 # Circular Linked List
 
@@ -98,4 +106,3 @@ A circular linked list can be either singly linked or doubly linked.
 for singly linked list, next pointer of last item points to the first item
 In the doubly linked list, prev pointer of the first item points to the last item as well.
 
-#
