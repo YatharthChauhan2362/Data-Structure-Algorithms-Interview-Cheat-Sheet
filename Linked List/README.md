@@ -16,7 +16,7 @@ The last node of the list stored null value as the address.
 
 It is possible for a list to have no nodes at all, such a list is called empty list.
 
-Time Complexity
+# Time Complexity
 
 Worst case Average Case
 
@@ -26,7 +26,7 @@ Insert O(1) O(1)
 
 Deletion O(1) O(1)
 
-Space Complexity: O(n)
+# Space Complexity: O(n)
 
 # Linked List Applications
 
