@@ -97,5 +97,3 @@ A circular linked list can be either singly linked or doubly linked.
 
 for singly linked list, next pointer of last item points to the first item
 In the doubly linked list, prev pointer of the first item points to the last item as well.
-
-#
