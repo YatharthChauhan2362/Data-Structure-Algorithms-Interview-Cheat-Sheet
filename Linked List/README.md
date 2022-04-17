@@ -3,18 +3,27 @@
 # Linked List
 
 A linked list is a non-sequential collection of data items.
+
 A Linked List is a Linear Data Structure.
+
 A LL is the collection of nodes that are randomly stored.
+
 Each node has data and a pointer to the next node.
+
 Each node is divided into two parts, the first part represents the data of the element and the second part contains the address of next node.
+
 The last node of the list stored null value as the address.
+
 It is possible for a list to have no nodes at all, such a list is called empty list.
 
 Time Complexity
 
 Worst case Average Case
+
 Search O(n) O(n)
+
 Insert O(1) O(1)
+
 Deletion O(1) O(1)
 
 Space Complexity: O(n)
@@ -73,7 +82,7 @@ Insertion at the End
    assign the value of prev of next node to the prev of newNode
    assign the address of newNode to the prev of next node
 
-# -> 3. Insertion at the End
+# -> Insertion at the End
 
 1. Create a new node
 
