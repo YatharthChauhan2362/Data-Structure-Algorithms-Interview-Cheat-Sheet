@@ -1,3 +1,80 @@
 # (Author: Yatharth Chauhan)
 
 # Algorithm For Queue
+
+-> Queue follows the First In First Out(FIFO) rule - the item that goes in first is the item that comes out first.
+
+-> In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.
+
+# -> Basic Operations of Queue
+
+Enqueue: Add an element to the end of the queue
+Dequeue: Remove an element from the front of the queue
+IsEmpty: Check if the queue is empty
+IsFull: Check if the queue is full
+Peek: Get the value of the front of the queue without removing it
+
+# -> Working of Queue
+
+1. two pointers FRONT and REAR
+2. FRONT track the first element of the queue
+3. REAR track the last element of the queue
+4. initially, set value of FRONT and REAR to -1
+
+-> Enqueue Operation
+
+1. check if the queue is full
+2. for the first element, set the value of FRONT to 0
+3. increase the REAR index by 1
+4. add the new element in the position pointed to by REAR
+
+-> Dequeue Operation
+
+1. check if the queue is empty
+2. return the value pointed by FRONT
+3. increase the FRONT index by 1
+4. for the last element, reset the values of FRONT and REAR to -1
+
+Algorithm
+
+-> INIT
+
+1. FRONT : = 1;
+2. REAR : = 0;
+3. Return;
+
+-> INSERT-ITEM
+
+1. If(REAR = MAX) then
+   a.Display “Queue overflow”;
+   b.Return;
+2. Otherwise
+   a.REAR : = REAR + 1;
+   b.QUEUE(REAR) : = ITEM;
+3. Return;
+
+-> REMOVE - ITEM
+
+1. If(FRONT = REAR + 1) then
+   a.Display “Queue underflow”;
+   b.Return;
+2. Otherwise
+   a.ITEM : = QUEUE(FRONT);
+   b.FRONT : = FRONT + 1;
+3. Return;
+
+-> EMPTY - CHECK
+
+1. If(FRONT = REAR + 1) then
+   a.EMPTY : = true;
+2. Otherwise
+   a.EMPTY : = false;
+3. Return;
+
+-> FULL - CHECK
+
+1. If(REAR = MAX) then
+   a.FULL : = true;
+2. Otherwise
+   a.FULL : = false;
+3. Return;
