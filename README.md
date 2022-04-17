@@ -1,4 +1,4 @@
-# Tech Interview Cheat Sheet
+# Tech Interview Cheat Sheet (Author: Yatharth Chauhan)
 
 This list is meant to be both a quick guide and reference for further research into these topics. It's basically a summary of that comp sci course you never took or forgot about, so there's no way it can cover everything in depth.
 
@@ -6,9 +6,9 @@ This list is meant to be both a quick guide and reference for further research i
 
 This is an open source, community project, and I am grateful for all the help I can get. If you find a mistake make a PR and please have a source so I can confirm the correction. If you have any suggestions feel free to open an issue.
 
-## Challenges
+<!-- ## Challenges
 
-This project now has actual code challenges! This challenges are meant to cover the topics you'll read below. Maybe you'll see them in an interview and maybe you won't. Either way you'll probably learn something new. [Click here for more](./challenges/README.md)
+This project now has actual code challenges! This challenges are meant to cover the topics you'll read below. Maybe you'll see them in an interview and maybe you won't. Either way you'll probably learn something new. [Click here for more](./challenges/README.md) -->
 
 # Table of Content
 
@@ -49,7 +49,7 @@ The following are the Asymptotic rates of growth from best to worst:
 - factorial growth – `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
   small values of `n`
 
-[(source: Soumyadeep Debnath, _Analysis of Algorithms | Big-O analysis_)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
+[(source: geeksforgeeks, _Analysis of Algorithms | Big-O analysis_)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
 
 Visualized below; the x-axis representing input size and the y-axis representing complexity:
 
