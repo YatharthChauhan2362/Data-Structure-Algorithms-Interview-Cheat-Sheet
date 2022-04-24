@@ -126,11 +126,11 @@ INIT
 
    a. If ( REAR = MAX ) then
 
-   i. REAR := 1;
+   REAR := 1;
 
    b. Otherwise
 
-   i. REAR := REAR + 1;
+   REAR := REAR + 1;
 
    c. QUEUE(REAR) := ITEM;
 
@@ -152,11 +152,11 @@ INIT
 
    b. If ( FRONT =MAX ) then
 
-   i. FRONT := 1;
+   FRONT := 1;
 
    c. Otherwise
 
-   i. FRONT := FRONT + 1;
+   FRONT := FRONT + 1;
 
    d. COUNT := COUNT + 1;
 
