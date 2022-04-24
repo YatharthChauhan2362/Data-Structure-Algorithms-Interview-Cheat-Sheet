@@ -21,6 +21,8 @@ Peek: Get the value of the front of the queue without removing it
 3. REAR track the last element of the queue
 4. initially, set value of FRONT and REAR to -1
 
+# Simple Queue
+
 -> Enqueue Operation
 
 1. check if the queue is full
@@ -78,3 +80,62 @@ Algorithm
 2. Otherwise
    a.FULL : = false;
 3. Return;
+
+# Circular Queue
+
+INIT
+
+1. FRONT := 1;
+2. REAR := 0;
+3. COUNT := 0;
+4. Return;
+
+INSERT-ITEM
+
+1. If ( COUNT = MAX ) then
+   a. Display “Queue overflow”;
+   b. Return;
+
+2. Otherwise
+   a. If ( REAR = MAX ) then
+   i. REAR := 1;
+   b. Otherwise
+   i. REAR := REAR + 1;
+   c. QUEUE(REAR) := ITEM;
+   d. COUNT := COUNT + 1;
+3. Return;
+
+REMOVE-ITEM
+
+1. If ( COUNT = 0 ) then
+   a. Display “Queue underflow”;
+   b. Return;
+
+2. Otherwise
+   a. ITEM := QUEUE(FRONT)l
+   b. If ( FRONT =MAX ) then
+   i. FRONT := 1;
+   c. Otherwise
+   i. FRONT := FRONT + 1;
+   d. COUNT := COUNT + 1;
+
+3. Return;
+
+EMPTY-CHECK
+
+1. If( COUNT = 0 ) then
+   a. EMPTY := true;
+
+2. Otherwise
+   a. EMPTY := false;
+
+3. Return ;
+
+FULL-CHECK)
+
+1. If ( COUNT = MAX ) then
+   a. FULL := true;
+
+2. Otherwise
+   a. FULL := false;
+3. Return ;
