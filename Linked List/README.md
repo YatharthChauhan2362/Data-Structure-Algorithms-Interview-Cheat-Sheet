@@ -46,40 +46,53 @@ Each struct node has a data item, a pointer to the previous struct node, and a p
 # -> Insertion at the beginning
 
 1. Create a new node
+
    allocate memory for newNode
+
    assign the data to newNode.
 
 2. Set prev and next pointers of new node
+
    point next of newNode to the first node of the doubly linked list
+
    point prev to null
 
 3. Make new node as head node
+
    Point prev of the first node to newNode (now the previous head is the second node)
+
    Point head to newNode
 
 4. Set the next pointer of new node and previous node
+
    assign the value of next from previous node to the next of newNode
+
    assign the address of newNode to the next of previous node
 
 5. Set the prev pointer of new node and the next node
-   assign the value of prev of next node to the prev of newNode
-   assign the address of newNode to the prev of next node
 
-Insertion in-between nodes
-Insertion at the End
+   assign the value of prev of next node to the prev of newNode
+
+   assign the address of newNode to the prev of next node
 
 # -> Insertion in between two nodes
 
 1. Create a new node
+
    allocate memory for newNode
+
    assign the data to newNode.
 
 2. Set the next pointer of new node and previous node
+
    assign the value of next from previous node to the next of newNode
+
    assign the address of newNode to the next of previous node
 
 3. Set the prev pointer of new node and the next node
+
    assign the value of prev of next node to the prev of newNode
+
    assign the address of newNode to the prev of next node
 
 # -> Insertion at the End
@@ -87,7 +100,10 @@ Insertion at the End
 1. Create a new node
 
 2. Set prev and next pointers of new node and the previous node
-   If the linked list is empty, make the newNode as the head node. Otherwise, traverse to the end of the doubly linked list and
+
+   If the linked list is empty, make the newNode as the head node.
+
+   Otherwise, traverse to the end of the doubly linked list
 
 # Circular Linked List
 
@@ -96,4 +112,5 @@ A circular linked list is a variation of a linked list in which the last element
 A circular linked list can be either singly linked or doubly linked.
 
 for singly linked list, next pointer of last item points to the first item
+
 In the doubly linked list, prev pointer of the first item points to the last item as well.
