@@ -27,29 +27,29 @@ Peek: Get the value of the front of the queue without removing it
 
 # Simple Queue
 
--> Enqueue Operation
+# -> Enqueue Operation
 
 1. check if the queue is full
 2. for the first element, set the value of FRONT to 0
 3. increase the REAR index by 1
 4. add the new element in the position pointed to by REAR
 
--> Dequeue Operation
+# -> Dequeue Operation
 
 1. check if the queue is empty
 2. return the value pointed by FRONT
 3. increase the FRONT index by 1
 4. for the last element, reset the values of FRONT and REAR to -1
 
-Algorithm
+# Algorithm
 
--> INIT
+# -> INIT
 
 1. FRONT : = 1;
 2. REAR : = 0;
 3. Return;
 
--> INSERT-ITEM
+# -> INSERT-ITEM
 
 1. If(REAR = MAX) then
 
@@ -65,7 +65,7 @@ Algorithm
 
 3. Return;
 
--> REMOVE - ITEM
+# -> REMOVE - ITEM
 
 1. If(FRONT = REAR + 1) then
 
@@ -81,7 +81,7 @@ Algorithm
 
 3. Return;
 
--> EMPTY - CHECK
+# -> EMPTY - CHECK
 
 1. If(FRONT = REAR + 1) then
 
@@ -93,7 +93,7 @@ Algorithm
 
 3. Return;
 
--> FULL - CHECK
+# -> FULL - CHECK
 
 1. If(REAR = MAX) then
 
@@ -114,7 +114,7 @@ INIT
 3. COUNT := 0;
 4. Return;
 
-INSERT-ITEM
+# INSERT-ITEM
 
 1. If ( COUNT = MAX ) then
 
@@ -138,7 +138,7 @@ INSERT-ITEM
 
 3. Return;
 
-REMOVE-ITEM
+# REMOVE-ITEM
 
 1. If ( COUNT = 0 ) then
 
@@ -162,7 +162,7 @@ REMOVE-ITEM
 
 3. Return;
 
-EMPTY-CHECK
+# EMPTY-CHECK
 
 1. If( COUNT = 0 ) then
 
@@ -174,7 +174,7 @@ EMPTY-CHECK
 
 3. Return ;
 
-FULL-CHECK)
+# FULL-CHECK)
 
 1. If ( COUNT = MAX ) then
 
@@ -185,3 +185,53 @@ FULL-CHECK)
    a. FULL := false;
 
 3. Return ;
+
+# Double Endend Queue
+
+# INSERT-AT-FRONT
+
+1.  If ( COUNT = MAX ) then
+
+    a. Print “DeQueue Overflow”;
+
+    b. Return;
+
+2.  Otherwise
+
+    a. If( FRONT = 1 ) then
+
+    FRONT := MAX;
+
+    b. Otherwise
+
+    FRONT := FRONT – 1;
+
+    c. DEQUEUE(FRONT) := ITEM;
+
+    d. COUNT : = COUNT + 1;
+
+3.  Return;
+
+# # DELETE-FROM-REAR
+
+1.  If(COUNT = 0 ) then
+
+    a. Print “DeQueue underflow”;
+
+    b. Return;
+
+2.  Otherwise
+
+    a. ITEM := DEQUEUE(REAR);
+
+    b. If ( REAR = 1) then
+
+    REAR := MAX;
+
+    c. Otherwise
+
+    REAR := REAR -1;
+
+    d. COUNT := COUNT – 1;
+
+3.  Return;
