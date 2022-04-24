@@ -52,37 +52,57 @@ Algorithm
 -> INSERT-ITEM
 
 1. If(REAR = MAX) then
+
    a.Display “Queue overflow”;
+
    b.Return;
+
 2. Otherwise
+
    a.REAR : = REAR + 1;
+
    b.QUEUE(REAR) : = ITEM;
+
 3. Return;
 
 -> REMOVE - ITEM
 
 1. If(FRONT = REAR + 1) then
+
    a.Display “Queue underflow”;
+
    b.Return;
+
 2. Otherwise
+
    a.ITEM : = QUEUE(FRONT);
+
    b.FRONT : = FRONT + 1;
+
 3. Return;
 
 -> EMPTY - CHECK
 
 1. If(FRONT = REAR + 1) then
+
    a.EMPTY : = true;
+
 2. Otherwise
+
    a.EMPTY : = false;
+
 3. Return;
 
 -> FULL - CHECK
 
 1. If(REAR = MAX) then
+
    a.FULL : = true;
+
 2. Otherwise
+
    a.FULL : = false;
+
 3. Return;
 
 # Circular Queue
@@ -97,30 +117,47 @@ INIT
 INSERT-ITEM
 
 1. If ( COUNT = MAX ) then
+
    a. Display “Queue overflow”;
+
    b. Return;
 
 2. Otherwise
+
    a. If ( REAR = MAX ) then
+
    i. REAR := 1;
+
    b. Otherwise
+
    i. REAR := REAR + 1;
+
    c. QUEUE(REAR) := ITEM;
+
    d. COUNT := COUNT + 1;
+
 3. Return;
 
 REMOVE-ITEM
 
 1. If ( COUNT = 0 ) then
+
    a. Display “Queue underflow”;
+
    b. Return;
 
 2. Otherwise
+
    a. ITEM := QUEUE(FRONT)l
+
    b. If ( FRONT =MAX ) then
+
    i. FRONT := 1;
+
    c. Otherwise
+
    i. FRONT := FRONT + 1;
+
    d. COUNT := COUNT + 1;
 
 3. Return;
@@ -128,9 +165,11 @@ REMOVE-ITEM
 EMPTY-CHECK
 
 1. If( COUNT = 0 ) then
+
    a. EMPTY := true;
 
 2. Otherwise
+
    a. EMPTY := false;
 
 3. Return ;
@@ -138,8 +177,11 @@ EMPTY-CHECK
 FULL-CHECK)
 
 1. If ( COUNT = MAX ) then
+
    a. FULL := true;
 
 2. Otherwise
+
    a. FULL := false;
+
 3. Return ;
